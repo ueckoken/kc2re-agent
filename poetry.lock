@@ -228,6 +228,17 @@ requests = ">=1.1"
 urllib3 = ">=1.8"
 
 [[package]]
+name = "simplesimplestreams"
+version = "0.1.1"
+description = "simple simplestreams client"
+category = "main"
+optional = false
+python-versions = ">=3.9,<4.0"
+
+[package.dependencies]
+requests = ">=2.26.0,<3.0.0"
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -291,7 +302,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "179b6a8cb6dd7808008f7e3dfed66f48b8d2d323fafdc7f3e664cc6649f62f9a"
+content-hash = "2d498962af000c8ea50ec12b64184c6aa172062a3c7c5eb5d1b7026cfe6495d4"
 
 [metadata.files]
 appdirs = [
@@ -503,6 +514,10 @@ requests-toolbelt = [
 requests-unixsocket = [
     {file = "requests-unixsocket-0.2.0.tar.gz", hash = "sha256:9e5c1a20afc3cf786197ae59c79bcdb0e7565f218f27df5f891307ee8817c1ea"},
     {file = "requests_unixsocket-0.2.0-py2.py3-none-any.whl", hash = "sha256:014d07bfb66dc805a011a8b4b306cf4ec96d2eddb589f6b2b5765e626f0dc0cc"},
+]
+simplesimplestreams = [
+    {file = "simplesimplestreams-0.1.1-py3-none-any.whl", hash = "sha256:81116d87d584eccb8a3e7d63a6dc817ff0f6f4240262547ddf17ec7d201952bd"},
+    {file = "simplesimplestreams-0.1.1.tar.gz", hash = "sha256:3c7bbe29fe91282fd8610f32311475c083e841f400a6d883c959eac7e656ef74"},
 ]
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},

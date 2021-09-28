@@ -8,7 +8,7 @@ from pylxd import Client  # type: ignore
 from pylxd.models import Instance  # type: ignore
 from websocket import WebSocketApp  # type: ignore
 from functools import cache
-from .simplestreams import SimpleStreamsClient, Product
+from simplesimplestreams import SimpleStreamsClient, Product
 from .lxd_types import InstanceStateNetwork, SimpleInstancePost
 from .messages import (
     AdvertiseHostMessage,
