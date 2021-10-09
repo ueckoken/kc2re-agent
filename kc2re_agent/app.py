@@ -17,7 +17,7 @@ from .messages import (
     InstanceInfoAddress,
     Message,
 )
-from .cloud_init_templates import CLOUD_INIT_USERDATA
+from .cloud_init_templates import generate_cloud_init_userdata_string
 
 
 CONTROL_PLANE_URI = os.environ.get("KC2_CONTROL_PLANE_URI", "ws://localhost:8000")
@@ -80,13 +80,12 @@ def get_suitable_images() -> list[ImageInfo]:
 def create_instance_post(
     name: str, username: str, password: str, alias: str
 ) -> SimpleInstancePost:
-    hashed_password = crypt.crypt(password)
     return {
         "name": name,
         "config": {
-            "user.user-data": CLOUD_INIT_USERDATA.format(
+            "user.user-data": generate_cloud_init_userdata_string(
                 default_user_name=username,
-                hashed_default_user_password=hashed_password,
+                default_user_raw_passwd=password,
             )
         },
         "source": {

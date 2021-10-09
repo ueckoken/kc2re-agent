@@ -10,11 +10,13 @@ websocket-client = "^1.1.0"
 pylxd = "^2.3.0"
 requests = "^2.26.0"
 simplesimplestreams = "^0.1.1"
+PyYAML = "^5.4.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.6b0"
 mypy = "^0.910"
 types-requests = "^2.25.6"
+types-PyYAML = "^5.4.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
